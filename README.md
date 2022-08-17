@@ -1,4 +1,4 @@
-# My-first-Simon file:///home/ire/Pictures/Simon.png
+# My-first-Simon
 ![Screenshot](screenshot.png)
 Created with CodeSandbox
 ##### This is my very first application in JavaScript
