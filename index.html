@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simon's Game</title>
+    <link rel="icon" type="image/x-icon" href="/images/simonFavicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <h1 id="level-title">
+      Play
+    </h1>
+    <div id="difficulty_div">
+      <label class="difficulty_label">Easy baby</label>
+      <input
+        id="difficulty_level"
+        type="range"
+        min="0"
+        max="2"
+        step="1"
+        onchange="setDifficultyLevel(this.value)"
+      />
+      <label class="difficulty_label">Hard or home</label>
+    </div>
+    <button
+      class="btn start"
+      id="start-game"
+      type="button"
+      onclick="startTheGame(this.id)"
+    >
+      Challange Simon
+    </button>
+    <div class="container">
+      <div lass="row">
+        <div
+          type="button"
+          id="green"
+          class="btn green"
+          onclick="colorClicked(this.id)"
+        ></div>
+
+        <div
+          type="button"
+          id="red"
+          class="btn red"
+          onclick="colorClicked(this.id)"
+        ></div>
+      </div>
+
+      <div class="row">
+        <div
+          type="button"
+          id="yellow"
+          class="btn yellow"
+          onclick="colorClicked(this.id)"
+        ></div>
+        <div
+          type="button"
+          id="blue"
+          class="btn blue"
+          onclick="colorClicked(this.id)"
+        ></div>
+      </div>
+    </div>
+    <h3 id="colors-guessed"></h3>
+    <script src="script/javascript.js"></script>
+  </body>
+</html>
